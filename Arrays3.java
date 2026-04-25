@@ -9,7 +9,7 @@ public class Arrays3 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(string[] args) {
         // methods in array class;
         // 1. sort; - changes in original array;
         int arr[] = { 5, 4, 3, 2, 1 };

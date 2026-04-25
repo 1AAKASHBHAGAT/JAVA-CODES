@@ -1,8 +1,8 @@
 class Student {
-  String name;
+  string name;
   int age;
 
-  Student(String name, int age){
+  Student(string name, int age){
     this.age = age;
     this.name = name;
   }
@@ -14,7 +14,7 @@ void display(){
 }
 
 public class Array2 {
-  public static void main(String[] args){
+  public static void main(string[] args){
     // arrays of objects
     Student[] students = new Student[3]; // student class ke 3 objects banenge students array me and object ka size 4 byte hota hai (reference variable) to total size 3*4 = 12 byte hoga students array ka
     //student[] arr = new student[3]; ek aur tarika hai array banane ka

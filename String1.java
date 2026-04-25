@@ -57,6 +57,38 @@ public class String1 {
         System.out.println(s);
 
         // 4. string buffer and string builder
+        //5. Mutable string - StringBuffer and StringBuilder
 
+        StringBuilder sb = new StringBuilder("hello");
+        //StringBuffer sbf = new StringBuffer("hello");
+
+        //6. methods 
+        //append - add at last; - returns a string builder object
+        System.out.println(sb.append("java"));
+
+        //insert - add at specific index; - returns a string builder object
+        System.out.println(sb.insert(5,"world"));
+
+        //delete - delete a part of string; - returns a string builder object
+        //System.out.println(sb.delete(5,10));
+
+        //replace - replace a part of string; - returns a string builder object
+        System.out.println(sb.replace(5,10,"java"));
+
+        //reverse () - reverse the string; - returns a string builder object
+
+        sb.reverse();
+        System.out.println(sb);
+
+        //q. take input as String from user 
+        //convert it to string builder and reverse it
+        //then convert the string builder back to string and print it
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter a string");
+        String inp = sc.nextLine();
+        StringBuilder input = new StringBuilder(inp);
+        input.reverse();
+        System.out.println(input);
+        String ans = input.toString();
     }
 }

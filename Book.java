@@ -1,7 +1,7 @@
 
 public class Book implements Cloneable {
-    private String title;
-    private String author;
+    private string title;
+    private string author;
     private float price;
 
     // Default constructor
@@ -12,14 +12,14 @@ public class Book implements Cloneable {
     }
 
     // Constructor with 2 parameters
-    public Book(String title, String author) {
+    public Book(string title, string author) {
         this.title = title;
         this.author = author;
         this.price = 0;
     }
 
     // Constructor with 3 parameters
-    public Book(String title, String author, float price) {
+    public Book(string title, string author, float price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -30,7 +30,7 @@ public class Book implements Cloneable {
         return super.clone();
     }
 
-    public String toString() {
+    public string toString() {
         return "Title - " + title + "\nAuthor - " + author + "\nPrice - " + price;
     }
 }
