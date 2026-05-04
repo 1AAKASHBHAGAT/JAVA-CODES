@@ -1,0 +1,23 @@
+class Student{
+  String name;
+  int age;
+
+  void display() {
+    System.out.println(name + " " + age);
+  }
+}
+public class Multiple {
+  public static void main(String[] args) {
+    Student s1 = new Student();
+    Student s2 = new Student();
+    s1.name = "Aakash bhagat";
+    s1.age = 19;
+    
+
+    s2.name = "Aman bhagat";
+    s2.age = 22;
+    s1.display();
+    s2.display();
+  }
+  
+}
