@@ -2,6 +2,9 @@ class Parent {
     void print(int x) {
         System.out.println("the value of x = " + x);
     }
+    Parent(int x) {
+        System.out.println("Parent constructor");
+    }
 
     void show() {
         System.out.println("parent show function");
@@ -11,6 +14,11 @@ class Parent {
 class Child extends Parent {
     void print(int x) {
         System.out.println("double of x is = " + 2 * x);
+    }
+
+    Child() {
+        super(10); // Calls Parent constructor with argument 10
+        System.out.println("Child constructor");
     }
 
     void show() {
@@ -25,8 +33,8 @@ public class Override {
         ch.print(3);
 
         // Reference of Parent, Object of Child
-        Parent p = new Child();
+        //Parent p = new Child();
         // Method of Child will Run
-        p.print(4);
+        //p.print(4);
     }
 }
